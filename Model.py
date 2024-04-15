@@ -20,7 +20,7 @@ if (trainData == True):
             trainWeights[i] = random.randint(0, 100) / 100
             trainBias[i] = random.randint(-100, 100) / 100
 
-        with open(r"C:\Users\Liams\OneDrive\Desktop\my first ai\happyDataset.txt") as file:
+        with open(r"PathHere\happyDataset.txt") as file:
             for line in file:
                 total = 0
                 wordNum = 0
@@ -32,7 +32,7 @@ if (trainData == True):
                 if wordNum != 0:
                     accuracy += total / wordNum
 
-        with open(r"C:\Users\Liams\OneDrive\Desktop\my first ai\sadDataset.txt") as file:
+        with open(r"PathHere\sadDataset.txt") as file:
             for line in file:
                 total = 0
                 wordNum = 0
